@@ -4,28 +4,12 @@
 
 # 999 * 999 = 998001
 
-# Ответ: - 997799
+# Ответ: - 906609
 
-def reverse(n):
-	a = int(n)
-	rev = 0
-	while( a > 0):
-		dig = a % 10
-		rev = rev * 10 + dig
-		a = a // 10
-	return rev
-	
+def palindrome():
+    palindromes = (i * j for i in reversed(range(100, 1000)) for j in reversed(range(100, 1000)) if str(i * j) == str(i * j)[::-1])
+    return max(palindromes)
 
-def ispalindrom(num):
-	a = reverse(num)
-	if a == num:
-		return True
-	else:
-		return False
-	
-
-for i in range(998001):
-	inc = ispalindrom(i)
-	if inc == True:
-		print(i)
+result = palindrome()
+print(result)
 

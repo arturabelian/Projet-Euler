@@ -15,13 +15,13 @@ for i in range(1,101):
     i = i*i
     a.append(i)
 s = sum(a)
-print(s)
+# print(s)
 # 338350
 
 y = 2
 c = sum(range(1, 101))
 d = pow(c, y)
-print(d)
+# print(d)
 # 25502500
 
 res = d-s
