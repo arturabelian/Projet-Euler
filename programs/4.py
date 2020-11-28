@@ -7,8 +7,8 @@
 # Ответ: - 906609
 
 def palindrome():
-    palindromes = (i * j for i in reversed(range(100, 1000)) for j in reversed(range(100, 1000)) if str(i * j) == str(i * j)[::-1])
-    return max(palindromes)
+    palindrome = (i * j for i in reversed(range(100, 1000)) for j in reversed(range(100, 1000)) if str(i * j) == str(i * j)[::-1])
+    return max(palindrome)
 
 result = palindrome()
 print(result)

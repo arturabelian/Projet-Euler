@@ -10,21 +10,19 @@
 
 # Ответ: 25164150
 
-a = []
-for i in range(1,101):
+sum_of_quad = []
+for i in range(1, 101):
     i = i*i
-    a.append(i)
-s = sum(a)
-# print(s)
+    sum_of_quad.append(i)
+sum_of_quad = sum(sum_of_quad)
 # 338350
 
-y = 2
+power = 2
 c = sum(range(1, 101))
-d = pow(c, y)
-# print(d)
+quad_of_sum = pow(c, power)
 # 25502500
 
-res = d-s
-print(res)
+result = quad_of_sum - sum_of_quad
+print(result)
 
 # 25164150

@@ -4,14 +4,14 @@
 
 # Ответ: 6857
 
-n = 600851475143 
+number = 600851475143 
 i = 2
 
-while i * i < n:
-    while n % i == 0:
-        n = n / i
-    i = i + 1
+while i * i < number:
+    while number % i == 0:
+        number = number / i
+    i += 1
 
-print (int(n))
+print(int(number))
 
 # Ответ присутствует в самом числе [6]00[8][5]14[7]5143 :)
